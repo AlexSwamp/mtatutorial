@@ -20,7 +20,7 @@ function renderHud()
 	dxDrawRectangle(x/2+10, 22, size_w, size_h,tocolor(0, 0, 0, 255/100*30)) -- armor bg
 	dxDrawRectangle(x/2+10, 22, armorBar, size_h,tocolor(65, 131, 215, 255/100*30)) -- armor kirajzolása
 
-	-- Képes, széles,csíkos verzió
+	-- Képes, széles,csíkos verzió[a cube.png kép egy 30,30-s fehér kocka, mely nem áttetsző!]
 		-- hp
 	dxDrawImage(x/2+250,32,30,30,'files/cube.png',0,0,0,tocolor(0,0,0,255/100*50))
 	dxDrawImageSection(x/2+250, 32+30, 30, hpBarForSection, 0, 0, hpBarForSection,30, 'files/cube.png', 0, 0, 0, tocolor(210, 77, 87,255))
