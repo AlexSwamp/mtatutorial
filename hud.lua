@@ -12,7 +12,8 @@ function renderHud()
 	dxDrawRectangle(x/2+10, 12, hpBar, size_h,tocolor(210, 77, 87, 255/100*30)) -- hp kirajzolása
 
 	-- Képes széles,csíkos verzió
-	dxDrawImage(x/2,10,100,100,'files/ezamegjelenitendokep.png')
+	dxDrawImage(x/2,10,100,100,'files/cube.png')
+	dxDrawImageSection(x+43 + 101, y+h/2+3, hpBar, size_h, 0, 0, hpBar,size_h, 'files/cube.png', 0, 0, 0, tocolor(183,147,59,255))
 
 	-- Textes verzió
 	dxDrawText("#D64541Életerő: #ffffff" .. math.ceil(hp) .."%",x/2,10,1,1,tocolor(255,255,255,255),1,"default-bold","left","top",false,false,false,true)
